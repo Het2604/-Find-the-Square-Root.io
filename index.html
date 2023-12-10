@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container {
+            
+            height: 400px;
+            width: 100%;
+            place-items: center;
+            align-items: center;
+            text-align: center;    
+            
+        }
+
+        .container1{
+            background-color: grey;
+            padding-top: 50px;
+            margin-left: 30%;
+            margin-right: 30%;
+            height:300px;
+            margin-top: 170px;
+             
+        }
+
+        button{
+             background-color: blueviolet;
+             border-radius: 5px;height: 30px;
+             
+        }
+        h1{
+            color: rgb(241, 9, 9);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container1">
+        <h1>Spuare Root Calculator</h1>
+
+        <label for="v1">Enter the number</label>
+        <input type="number" id="v1">
+
+        <button onclick="Root()">Calculate square Root</button>
+
+        <h1 id="h1"></h1>
+    </div>
+    </div>
+
+    <script>
+      const Root = ()=>{
+            var a =parseInt(document.getElementById("v1").value);
+
+            var a=Math.sqrt(a);
+
+            document.getElementById("h1").innerHTML="The square root of "+ a;
+
+            
+      }
+           
+    </script>
+</body>
+
+</html>
